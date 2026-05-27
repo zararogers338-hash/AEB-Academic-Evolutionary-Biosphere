@@ -1,0 +1,4 @@
+# Optional AI backend dependencies / 可选 AI 后端依赖
+ollama>=0.3.0
+openai>=1.10.0
+llama-cpp-python>=0.2.50

@@ -1,0 +1,43 @@
+# AEB - Academic Evolutionary Biosphere Configuration
+# 学术演化生物圈配置文件
+
+app:
+  title_zh: "学术演化生物圈 AEB"
+  title_en: "Academic Evolutionary Biosphere"
+  version: "3.0.0-open-source-preview"
+  default_lang: "zh"
+  theme: "dark"
+
+model:
+  # Priority: llama_cpp > ollama > openai_compatible
+  llama_cpp:
+    enabled: true
+    n_ctx: 16384
+    n_gpu_layers: -1
+    default_gguf_path: ""   # 填写本地GGUF文件路径，例如 C:/models/qwen2.5-7b.gguf
+  ollama:
+    enabled: true
+    base_url: "http://localhost:11434"
+    default_model: "qwen2.5:7b"
+  openai_compatible:
+    enabled: true
+    base_url: "https://api.openai.com/v1"
+    api_key: ""
+    model: "gpt-4o-mini"
+    timeout: 120
+    max_retries: 3
+    stream: true
+
+ecology:
+  top_predator_percentile: 0.01
+  dominant_percentile: 0.10
+  extinction_decay_threshold: 0.80
+  extinction_years: 5
+  shannon_warning_threshold: 1.5
+  sedimentation_warning_rate: 50
+  niche_levels: 5
+  louvain_resolution: 1.0
+
+export:
+  png_scale: 2
+  default_format: "json"

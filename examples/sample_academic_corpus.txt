@@ -1,0 +1,5 @@
+2020 Transformer models changed natural language processing by improving attention-based representation learning.
+2021 Large language models expanded pretraining, instruction tuning, and few-shot reasoning.
+2022 Retrieval augmented generation connected neural models with external knowledge bases.
+2023 Alignment, reinforcement learning from human feedback, and safety evaluation became central research topics.
+2024 Agentic workflows, tool use, and multimodal models increased the complexity of AI research ecosystems.

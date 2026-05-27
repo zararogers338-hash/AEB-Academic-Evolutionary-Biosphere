@@ -1,0 +1,14 @@
+[project]
+name = "aeb-academic-evolutionary-biosphere"
+version = "3.0.0"
+description = "Academic Evolutionary Biosphere: academic ecology analysis and visualization workbench."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Chris Nuomi"}]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.py_compile_check]
+entry = "app.py"
